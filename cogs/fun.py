@@ -106,7 +106,11 @@ class Fun(commands.Cog):
             fish_now += 0
             return await ctx.respond(
                 f"You can't find any candy... and thus can't feed panda. Panda still has {fish_now} pieces of candy.")
-
+        
+        if r == 0.1 and fish_now == 0
+            return await ctx.respond(
+                f"You feed panda one candy. Panda now has {fish_now += 1} piece of candy!"
+                
     @slash_command(guild_ids=[SERVER_ID])
     async def stealcandy(self, ctx):
         '''Steals some candy from panda'''
@@ -152,7 +156,7 @@ class Fun(commands.Cog):
 
     @slash_command(guild_ids=[SERVER_ID])
     async def count(self, ctx):
-        '''Counts the number of members in the server'''
+        '''Counts the how many members are in the server'''
         guild = ctx.author.guild
         await ctx.respond(f"Currently, there are `{len(guild.members)}` members in the server.")
 
