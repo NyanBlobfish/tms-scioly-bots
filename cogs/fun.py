@@ -91,7 +91,9 @@ class Fun(commands.Cog):
                 "Woah! Panda's amount of candy is a little too much, so it unfortunately has to be square rooted.")
         if r > 0.9:
             fish_now += 100
-
+        if fish_now == 1  
+        return await ctx.respond(f"You feed panda one candy. Panda now has {fish_now} piece of candy!")
+                
             if fish_now == 69: fish_now = 70
             return await ctx.respond(
                 f"Wow, you gave panda a super candy! Added 100 candy! Panda now has {fish_now} pieces of candy!")
